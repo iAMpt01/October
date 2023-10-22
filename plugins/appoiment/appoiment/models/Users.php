@@ -2,22 +2,17 @@
 
 use Model;
 
-/**
- * Users Model
- *
- * @link https://docs.octobercms.com/3.x/extend/system/models.html
- */
-class Users extends Model
+class Appointment extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
-    /**
-     * @var string table name
-     */
-    public $table = 'appoiment_appoiment_users';
+    public $table = 'appoiment_appoiments';
 
-    /**
-     * @var array rules for validation
-     */
-    public $rules = [];
+    public $rules = [
+        'name' => 'required',
+        'email' => 'required|email',
+        'phone' => 'required',
+        'appointment_date' => 'required|date',
+        'desired_service' => 'required',
+    ];
 }

@@ -13,7 +13,8 @@
         "rainlab/pages-plugin": "^2.0",
         "pkurg/logis-theme": "^1.0",
         "responsiv/flat-theme": "^1.1",
-        "jtherczeg/multi-theme": "^1.0"
+        "jtherczeg/multi-theme": "^1.0",
+        "rainlab/user-plugin": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"

@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="section-header">
+        <h2 class="section-title text-center wow fadeInDown">Fitness Class Registration</h2>
+        <p class="text-center wow fadeInDown">Register to access our services and achieve your fitness goals.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form method="POST" action="{{ 'your/route' | page }}" class="appointment-form">
+                {{ form_token() }}
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control form-control-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control form-control-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" class="form-control form-control-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Appointment Date</label>
+                    <input type="date" name="date" id="date" class="form-control form-control-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Desired Service</label>
+                    <select name="service" id="service" class="form-control form-control-sm" required>
+                        <option value="Personal Training">Personal Training</option>
+                        <option value="Group Classes">Group Classes</option>
+                        <option value="Nutrition Guidance">Nutrition Guidance</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Register Appointment</button>
+            </form>
+        </div>
+    </div>
+</div>

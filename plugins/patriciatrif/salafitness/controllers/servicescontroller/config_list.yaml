@@ -1,0 +1,12 @@
+list: $/patriciatrif/salafitness/models/service/columns.yaml
+modelClass: Patriciatrif\Salafitness\Models\Service
+title: ServicesController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'patriciatrif/salafitness/servicescontroller/update/:id'

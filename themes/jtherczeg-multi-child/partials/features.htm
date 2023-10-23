@@ -1,3 +1,11 @@
+[viewBag]
+==
+<?php
+function onStart() {
+    $this['services'] = Patriciatrif\Salafitness\Models\Service::all();
+}
+?>
+==
 <div class="container">
     <div class="section-header">
         <h2 class="section-title text-center wow fadeInDown">Fitness Class Registration</h2>
@@ -27,9 +35,9 @@
                 <div class="form-group">
                     <label for="service">Desired Service</label>
                     <select name="service" id="service" class="form-control form-control-sm" required>
-                        <option value="Personal Training">Personal Training</option>
-                        <option value="Group Classes">Group Classes</option>
-                        <option value="Nutrition Guidance">Nutrition Guidance</option>
+                    {% for service in services %}
+                        <option value="{{service.id}}">{{service.name}}</option>
+                    {% endfor %}
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Register Appointment</button>

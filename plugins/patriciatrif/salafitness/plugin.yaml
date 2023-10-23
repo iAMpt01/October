@@ -1,0 +1,11 @@
+plugin:
+    name: 'patriciatrif.salafitness::lang.plugin.name'
+    description: 'patriciatrif.salafitness::lang.plugin.description'
+    author: PatriciaTrif
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'patriciatrif.salafitness::lang.plugin.name'
+        url: patriciatrif/salafitness/servicescontroller
+        icon: icon-life-ring

@@ -1,0 +1,10 @@
+name: ServicesController
+form: $/patriciatrif/salafitness/models/service/fields.yaml
+modelClass: Patriciatrif\Salafitness\Models\Service
+defaultRedirect: patriciatrif/salafitness/servicescontroller
+create:
+    redirect: 'patriciatrif/salafitness/servicescontroller/update/:id'
+    redirectClose: patriciatrif/salafitness/servicescontroller
+update:
+    redirect: patriciatrif/salafitness/servicescontroller
+    redirectClose: patriciatrif/salafitness/servicescontroller
